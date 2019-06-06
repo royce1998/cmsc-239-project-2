@@ -42,6 +42,7 @@ class RootComponent extends React.Component {
         <div>{longBlock}</div>
         <ExampleChart data={data}/>
         <div>{longBlock}</div>
+        <Vis1 data={data}/>
       </div>
     );
   }
