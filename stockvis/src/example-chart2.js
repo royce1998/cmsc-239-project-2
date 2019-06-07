@@ -29,7 +29,7 @@ export default class ExampleChart2 extends Component {
     const array = [];
     const month = keys.indexOf(keyOfInterest);
     companyKey.map((d) => {
-      array[d]=data[keys.indexOf(d) + month * 63].mcap;
+      array[d]=data[companyKey.indexOf(d) + month * 63].mcap;
       //array.push(data[d + month * 63].mcap);
       });
     const preppedData = Object.entries(array).map(([key, values]) => {

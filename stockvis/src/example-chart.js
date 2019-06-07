@@ -24,12 +24,12 @@ export default class ExampleChart extends Component {
   render() {
     const {value, keyOfInterest} = this.state;
     const {data} = this.props;
-    const companyKey = [0, 1, 2]
+    const companyKey = ["Facebook", "Google", "Amazon"]
     const keys = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
     const array = [];
     const month = keys.indexOf(keyOfInterest);
     companyKey.map((d) => {
-      array.push(data[d + month * 63].volume);
+      array[d]=data[companyKey.indexOf(d) + month * 63].mcap;
       });
     const preppedData = Object.entries(array).map(([key, values]) => {
       return {key, size: values};
