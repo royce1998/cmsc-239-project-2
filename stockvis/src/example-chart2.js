@@ -2,15 +2,15 @@ import React, {Component} from 'react';
 
 import {RadialChart, Hint} from 'react-vis';
 
-function groupBy(data, key, month) {
-
-  const array = [];
-
-  key.map((d) => {
-    array.push(data[d + month * 63].mcap);
-    });
-  return array;
-}
+// function groupBy(data, key, month) {
+//
+//   const array = [];
+//
+//   key.map((d) => {
+//     array.push(data[d + month * 63].mcap);
+//     });
+//   return array;
+// }
 
 export default class ExampleChart2 extends Component {
   constructor() {
@@ -24,9 +24,15 @@ export default class ExampleChart2 extends Component {
   render() {
     const {value, keyOfInterest} = this.state;
     const {data} = this.props;
-    const companyKey = [0, 1, 2]
+    const companyKey = ["Facebook", "Google", "Amazon"]
     const keys = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-    const preppedData = Object.entries(groupBy(data, companyKey, keys.indexOf(keyOfInterest))).map(([key, values]) => {
+    const array = [];
+    const month = keys.indexOf(keyOfInterest);
+    companyKey.map((d) => {
+      array[d]=data[keys.indexOf(d) + month * 63].mcap;
+      //array.push(data[d + month * 63].mcap);
+      });
+    const preppedData = Object.entries(array).map(([key, values]) => {
       return {key, size: values};
     });
 

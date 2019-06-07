@@ -6,15 +6,15 @@ import {XYPlot, LineSeries} from 'react-vis';
 import {Sparklines, SparklinesLine, SparklinesSpots, SparklinesBars} from 'react-sparklines';
 
 
-function groupBy(data, key) {
-  return data.reduce((acc, row) => {
-    if (!acc[row[key]]) {
-      acc[row[key]] = [];
-    }
-    acc[row[key]].push(row);
-    return acc;
-  }, {});
-}
+// function groupBy(data, key) {
+//   return data.reduce((acc, row) => {
+//     if (!acc[row[key]]) {
+//       acc[row[key]] = [];
+//     }
+//     acc[row[key]].push(row);
+//     return acc;
+//   }, {});
+// }
 
 class Vis1 extends Component {
   constructor() {

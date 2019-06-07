@@ -2,10 +2,12 @@
   "name": "stockvis",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://royce1998.github.io/cmsc-239-project-2",
   "dependencies": {
     "@data-ui/sparkline": "0.0.78",
     "chart.js": "^2.8.0",
     "d3-fetch": "^1.1.2",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-d3-treemap": "^1.0.14",
     "react-dom": "^16.8.6",
@@ -16,6 +18,8 @@
     "victory": "^32.2.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
