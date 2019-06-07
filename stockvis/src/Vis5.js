@@ -5,9 +5,11 @@ import '../node_modules/react-vis/dist/style.css';
 import {XYPlot, LineSeries} from 'react-vis';
 import {Sparklines, SparklinesLine, SparklinesSpots, SparklinesBars, SparklinesReferenceLine, SparklinesNormalBand} from 'react-sparklines';
 import Chart from 'chart.js';
+import TreeMap from "react-d3-treemap";
+import "react-d3-treemap/dist/react.d3.treemap.css";
+import VictoryPie from 'victory';
 
-
-class Vis3 extends Component {
+class Vis5 extends Component {
 
   constructor() {
     super();
@@ -50,19 +52,18 @@ class Vis3 extends Component {
     if (loading) {
       return <h1>LOADING</h1>;
     }
-    const data = this.state.data.map(value => value.mkres10_raw);
-
+    const data = this.state.data.map(value => value.mkres10_pred);
     const keys = ["Facebook", "Google", "Amazon"];
     return (
       <div className="App">
-
-        <Sparklines data={data} width={200}>
-            <SparklinesLine style={{ stroke: "#2991c8", fill: "none"}} />
-            <SparklinesNormalBand style={{ fill: "#2991c8", fillOpacity: .1 }} />
+        <Sparklines data={data} limit={14}>
+            <SparklinesBars style={{ fill: "#41c3f9", fillOpacity: ".25" }} />
+            <SparklinesLine style={{ stroke: "#41c3f9", fill: "none" }} />
+            <SparklinesReferenceLine
+                type="mean"
+                style={{ stroke: 'red', strokeOpacity: .75, strokeDasharray: '2, 2' }} />
         </Sparklines>
-
         {Object.keys(keys).map(key => {
-          console.log(this.state.keyOfInterest);
           return (<button
             key={key}
             onClick={() => this.setState({keyOfInterest: key})}
@@ -73,4 +74,4 @@ class Vis3 extends Component {
   }
 }
 
-export default Vis3;
+export default Vis5;

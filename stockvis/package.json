@@ -7,10 +7,13 @@
     "chart.js": "^2.8.0",
     "d3-fetch": "^1.1.2",
     "react": "^16.8.6",
+    "react-d3-treemap": "^1.0.14",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
     "react-sparklines": "^1.7.0",
-    "react-vis": "^1.11.7"
+    "react-trend": "^1.2.5",
+    "react-vis": "^1.11.7",
+    "victory": "^32.2.3"
   },
   "scripts": {
     "start": "react-scripts start",

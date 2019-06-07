@@ -4,7 +4,6 @@ import {csv} from 'd3-fetch';
 import '../node_modules/react-vis/dist/style.css';
 import {XYPlot, LineSeries} from 'react-vis';
 import {Sparklines, SparklinesLine, SparklinesSpots, SparklinesBars} from 'react-sparklines';
-import Chart from 'chart.js';
 
 
 function groupBy(data, key) {

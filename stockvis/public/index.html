@@ -23,9 +23,64 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <h1>Learning to Compare Stocks!</h1>
+    <p>Hi there! The purpose of this visualization is to help you learn which
+    <br />properties of the stocks are most important to look at when deciding
+    <br />to invest. In this demonstration, we will be comparing the stocks of
+    <br />three tech giants, using stock data from 2016.</p>
+    <h2>Visualization 1: Stock Volume</h2>
+    <p>In this first visualization, we look at stock volumes. This tells
+    <br />us how many share of a specific stock has been traded within a 24
+    <br />hour period. In a way, the volume measure tells us how committed a
+    <br />stock is towards the direction it's currently moving. When volume is
+    <br />high, something big is happening to the stock (either great or terrible)
+    <br />because many transctions are happening.</p>
     <div id="vis1"></div>
+    <p>Try out the visualization! Click on a month to see a radial chart for the
+    <br />month that compares the volume of Facebook (light blue), Google (dark
+    <br />blue), and Amazon (turqoise). Note the drastic changes in dominance
+    <br />from month to month. When there is not much going on at a company,
+    <br />or in other words, when times are boring, there tends to be less activity
+    <br />and thus less trade volume. When the company does something exciting or
+    <br />something bad, there is a sudden change in people's confidence in that
+    <br />company and thus there is higher trade volume.</p>
+    <h2>Visualization 2: Market Capitalization</h2>
+    <p>However, trade volume alone is not enough. What if there is a really
+    <br />cheap stock (say $0.20 per share) but has millions of shares? Sure, it
+    <br />is high in volume, but it does not necessarily have more impact than
+    <br />companies like Amazon, which has lower volume but much higher price
+    <br />per share. To address this issue, we use a measure called market
+    <br />capitalization, which is just the market volume weighted by the price
+    <br />per share across time.</p>
     <div id="vis2"></div>
+    <p>Try out this visualization! Click the different months to compare market
+    <br />capitalization for those months for Facebook (light blue), Google (dark
+    <br />blue), and Amazon (turqoise). The interpretation is similar to the first
+    <br />visualization, but now you see that the radial chart is more balanced.
+    <br />Why is that? Why does Facebook tend to appear less dominant in this
+    <br />visualization, as compared to the last one? This is because Facebook
+    <br />stocks are much cheaper than Amazon stock prices, but are higher in
+    <br />volume. By looking at the market capitalization, we get a more balanced
+    <br />and reasonable (intuitively more sensible) comparison.</p>
+    <h2>Visualization 3: Stock Price</h2>
+    <p>One of the most common factors that everyone knows to look at is the stock
+    <br />price. The lower the stock price is, the more shares you can buy with
+    <br />your money. Companies that are performing well generally see a increasing
+    <br />trend in their stock prices. However, there is much more that the stock
+    <br />price tells us.</p>
     <div id="vis3"></div>
+    <p>Use the visualization to explore the trends for stock price for Facebook,
+    <br />Google, and Amazon. Use the buttons at the bottom of the page to
+    <br /> explore! There are two details on the graphs you should be looking at.
+    <br />The first is how much variance there is in the stock price. This is
+    <br />also sometimes called the volatility. The more steeper you see the lines
+    <br />going up and down here, the more potentially risky it is to invest in
+    <br />this stock. The second thing you should look at is the price relative
+    <br />to the average price (indicated by the horizontal dotted line). If
+    <br />the price is really high compared to its average, then potentially,
+    <br />it can be overvalued and it may be risky to invest in. On the other
+    <br />hand, if the price is low compared to its historical average, it may
+    <br />be a great opportunity to invest!</p>
     <div id="vis4"></div>
     <div id="vis5"></div>
     <div id="vis6"></div>
