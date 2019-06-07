@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/cmsc-239-project-2/static/css/main.2cce8147.chunk.css",
+    "main.js": "/cmsc-239-project-2/static/js/main.becf57bd.chunk.js",
+    "main.js.map": "/cmsc-239-project-2/static/js/main.becf57bd.chunk.js.map",
+    "runtime~main.js": "/cmsc-239-project-2/static/js/runtime~main.e89b2e80.js",
+    "runtime~main.js.map": "/cmsc-239-project-2/static/js/runtime~main.e89b2e80.js.map",
+    "static/css/2.ebe653e1.chunk.css": "/cmsc-239-project-2/static/css/2.ebe653e1.chunk.css",
+    "static/js/2.16f53a7f.chunk.js": "/cmsc-239-project-2/static/js/2.16f53a7f.chunk.js",
+    "static/js/2.16f53a7f.chunk.js.map": "/cmsc-239-project-2/static/js/2.16f53a7f.chunk.js.map",
+    "index.html": "/cmsc-239-project-2/index.html",
+    "precache-manifest.f2dd092757d2bf1cc206e7b9e530d66c.js": "/cmsc-239-project-2/precache-manifest.f2dd092757d2bf1cc206e7b9e530d66c.js",
+    "service-worker.js": "/cmsc-239-project-2/service-worker.js",
+    "static/css/2.ebe653e1.chunk.css.map": "/cmsc-239-project-2/static/css/2.ebe653e1.chunk.css.map",
+    "static/css/main.2cce8147.chunk.css.map": "/cmsc-239-project-2/static/css/main.2cce8147.chunk.css.map"
+  }
+}
